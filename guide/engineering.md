@@ -80,9 +80,10 @@ export default [
 ## 目录结构
 ```
 fas-penetrate-web
-  ├─public                    # 构建流程文件文件
-  ├─dist                      # 构建后的静态文件
-  ├─src                       # 业务代码文件
+  ├─public                    # 页面入口文件
+  ├─node_modules              # 项目依赖包
+  ├─dist                      # 打包后的静态文件
+  ├─src                       # 开发业务代码文件
   │  ├─axios                  # 请求配置
   │  ├─image                  # 图片资源
   │  ├─css                    # css样式资源
@@ -93,8 +94,8 @@ fas-penetrate-web
   │  ├─router                 # 路由配置文件
   │  ├─store                  # vuex 文件
   │  └─tools                  # 业务中的可复用工具库
-  ├─ vue.config.js            # 基本配置文件
-  ├─ my.config.js             # 自定义配置文件
+  ├─ vue.config.js            # 基本配置文件(webpack node proxy 等)
+  ├─ xx.config.js             # 自定义配置文件
   ├─ jest.config.js           # 自动化测试配置文件
   ├─.gitignore                # git 忽略配置
   ├─package.json              # npm 包配置文件
